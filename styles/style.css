@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  max-height: 100vh;
+}
+
+main {
+  display: flex;
+  gap: 400px;
+}
+
+.cards {
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 60px;
+  padding: 50px;
+  color: hsl(0deg, 0%, 100%);
+}
+.cards .front {
+  background-image: url("../images/bg-card-front.png");
+  width: 450px;
+  height: 250px;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+.cards .front img {
+  padding-left: 15px;
+}
+.cards .front .number, .cards .front .name {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  padding: 15px;
+}
+.cards .front .number p, .cards .front .name p {
+  padding-right: 15px;
+}
+.cards .front .name {
+  margin-top: 5px;
+  font-size: 15px;
+  justify-content: space-between;
+  margin-left: 7px;
+}
+.cards .front .number {
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.cards .back {
+  margin-left: 80px;
+  background-image: url("../images/bg-card-back.png");
+  width: 450px;
+  height: 250px;
+  background-repeat: no-repeat;
+}
+.cards .back .numberCvC {
+  display: flex;
+  width: 380px;
+  font-size: 15px;
+  justify-content: flex-end;
+  padding-top: 111px;
+}
+
+.branco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -100px;
+  align-items: center;
+}
+.branco form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.branco .date {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.branco .date input {
+  width: 80px;
+}
+.branco .baixo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  word-spacing: 10px;
+}
+.branco .cvc input {
+  width: 150px;
+}
+
+input {
+  border-radius: 10px;
+  height: 40px;
+  padding-left: 15px;
+}
+
+button {
+  height: 80px;
+  width: 300px;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+  }
+  main .color img {
+    width: 60rem;
+    height: 20rem;
+  }
+  main .cards {
+    padding-left: 300px;
+    margin-top: -650px;
+  }
+  main .cards .front {
+    position: absolute;
+    margin-top: 150px;
+  }
+  main .branco {
+    padding-left: 300px;
+    gap: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
